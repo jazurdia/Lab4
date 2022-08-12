@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="#3103A9F4"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+            android:id="@+id/updateText"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+
+            android:text="@string/actualizaci_n_disponible"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/downloadText"
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/descargar"
+            android:textColor="@color/blue_gay"
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="@string/day"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLinearLayout" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/day"
+
+        app:layout_constraintTop_toBottomOf="@+id/day" />
+
+    <Button
+        android:id="@+id/endBtn"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="80dp"
+        android:gravity="center"
+        android:text="@string/terminar_jornada"
+        android:textSize="11sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/day"
+        app:layout_constraintVertical_bias="0.619"
+
+
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="282dp"
+        android:layout_height="171dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/endBtn"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/date"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/endBtn">
+
+        <TextView
+            android:id="@+id/NameOfRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/name"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/adress"
+            app:layout_constraintStart_toStartOf="@+id/NameOfRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/NameOfRestaurant" />
+
+        <TextView
+            android:id="@+id/horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/horario"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/adress"
+            app:layout_constraintTop_toBottomOf="@+id/adress"
+
+
+            />
+
+        <Button
+            android:id="@+id/iniciarbtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/iniciar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/horario" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/detalles"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/iniciarbtn" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/description_image_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_star" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

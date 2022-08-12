@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab4-3</string>
+    <string name="description_image_2">debería ser una flecha</string>
+    <string name="detalles">Detalles</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="horario">05pm 12pm</string>
+    <string name="adress">6 calle 21-04 zona 12</string>
+    <string name="name">Don Kamaron</string>
+    <string name="terminar_jornada">terminar jornada</string>
+    <string name="date">03 de Abril</string>
+    <string name="day">Martes</string>
+    <string name="descargar">Descargar</string>
+    <string name="actualizaci_n_disponible">Actualización disponible</string>
+    <string name="todo">TODO</string>
+</resources>
