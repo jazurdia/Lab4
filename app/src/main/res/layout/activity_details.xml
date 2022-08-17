@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/NombreRestaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/name"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.149"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adressRestaurante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/adress"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/NombreRestaurante"
+            app:layout_constraintTop_toBottomOf="@+id/NombreRestaurante" />
+
+        <Button
+            android:id="@+id/permisoCamara"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/iniciar_visita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/adressRestaurante" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/grey_gay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permisoCamara">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/infoAdicional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/informaci_n_adicional"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/NombreRestaurante"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/horario_de_atenci_n"
+            app:layout_constraintStart_toEndOf="@+id/rejojIcon"
+            app:layout_constraintTop_toTopOf="@+id/rejojIcon" />
+
+        <ImageView
+            android:id="@+id/rejojIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/holaholahola"
+            app:layout_constraintStart_toStartOf="@+id/infoAdicional"
+            app:layout_constraintTop_toBottomOf="@+id/infoAdicional"
+            app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+        <TextView
+            android:id="@+id/horario2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/_5pm_12pm"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="@+id/rejojIcon"
+            app:layout_constraintTop_toBottomOf="@+id/rejojIcon"
+            app:srcCompat="@drawable/ic_baseline_local_phone_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/telefonoTitulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tel_fono"
+            app:layout_constraintStart_toStartOf="@+id/horario2"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/telefononum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/_5555_5555"
+            app:layout_constraintStart_toStartOf="@+id/telefonoTitulo2"
+            app:layout_constraintTop_toBottomOf="@+id/telefonoTitulo2" />
+
+        <Button
+            android:id="@+id/llamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:text="@string/llamar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            android:textColor="@color/blue_gay"
+            android:background="@null"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

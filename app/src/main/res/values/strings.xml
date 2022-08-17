@@ -12,4 +12,12 @@
     <string name="descargar">Descargar</string>
     <string name="actualizaci_n_disponible">Actualización disponible</string>
     <string name="todo">TODO</string>
+    <string name="iniciar_visita">Iniciar Visita</string>
+    <string name="informaci_n_adicional">Información Adicional</string>
+    <string name="horario_de_atenci_n">Horario de atención</string>
+    <string name="holaholahola">holaholahola</string>
+    <string name="_5pm_12pm">5pm - 12pm</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="_5555_5555">5555 5555</string>
+    <string name="llamar">Llamar</string>
 </resources>

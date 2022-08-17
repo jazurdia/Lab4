@@ -21,44 +21,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.002">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/btn_star_big_on"
-            android:contentDescription="@string/todo" />
 
+        <ImageView
+            android:id="@+id/updateImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_rotate" />
 
         <TextView
             android:id="@+id/updateText"
-            android:layout_width="180dp"
+            android:layout_width="105dp"
             android:layout_height="match_parent"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif"
 
+            android:gravity="center"
             android:text="@string/actualizaci_n_disponible"
             android:textColor="@color/black"
-            android:textSize="20sp"
-
-
             />
 
-        <TextView
-            android:id="@+id/downloadText"
+        <Button
+            android:id="@+id/btn_download"
             android:layout_width="14dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:text="@string/descargar"
             android:textColor="@color/blue_gay"
-            android:textSize="15sp"
+            android:autoSizeTextType="uniform"
 
             />
     </LinearLayout>
@@ -168,15 +166,15 @@
             app:layout_constraintStart_toStartOf="@+id/horario" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/detallesbtn"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:text="@string/detalles"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/btn_imageDirections"
             app:layout_constraintTop_toTopOf="@+id/iniciarbtn" />
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <ImageButton
+            android:id="@+id/btn_imageDirections"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -184,7 +182,12 @@
             android:contentDescription="@string/description_image_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/btn_star" />
+            app:srcCompat="@drawable/ic_baseline_directions_24"
+            />
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
